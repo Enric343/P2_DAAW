@@ -1,11 +1,10 @@
-/* src/components/GameBoard.css */
+/* src/css/GameBoard.css */
 
 .board {
     display: grid;
-    grid-template-columns: repeat(10, 20px);
-    grid-template-rows: repeat(10, 20px);
     gap: 1px;
     position: relative;
+    border: 2px solid black;
 }
 
 .cell {
@@ -14,12 +13,17 @@
     background-color: lightgrey;
 }
 
-.cell.snake {
+.cell.snake1 {
     background-color: green;
+}
+
+.cell.snake2 {
+    background-color: blue;
 }
 
 .cell.food {
     background-color: red;
+    border-radius: 50%;
 }
 
 .game-over {
@@ -29,5 +33,9 @@
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-    color: red;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
 }

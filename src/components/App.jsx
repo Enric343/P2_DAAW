@@ -4,11 +4,11 @@ import React from 'react';
 import GameBoard from './GameBoard';
 import '../css/App.css';
 
-function App() {
+function App({ p }) {
     return (
         <div className="App">
-            <h1>Snake Game</h1>
-            <GameBoard />
+            <h1>Snake Game (player {p})</h1>
+            <GameBoard player={'snake'+p}/>
         </div>
     );
 }
