@@ -2,14 +2,22 @@
 
 .board {
     display: grid;
-    gap: 1px;
+    margin-bottom: 0.5em;
+    gap: 2px;
     position: relative;
-    border: 2px solid black;
+    border: 5px solid black;
+    margin-top: 2em;
+}
+
+.board-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     background-color: lightgrey;
 }
 
@@ -26,7 +34,7 @@
     border-radius: 50%;
 }
 
-.game-over {
+.game-finished {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,8 +42,15 @@
     font-size: 24px;
     font-weight: bold;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
+}
+
+.game-finished.game-over {
+    background-color: rgba(197, 20, 20, 0.7);
+}
+
+.game-finished.winner-page {
+    background-color: rgba(39, 190, 18, 0.7);
 }

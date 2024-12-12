@@ -1,9 +1,102 @@
 /* src/App.css */
 
-.App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
 }
+
+:root {
+ --header-height: 3.5rem;
+ --first-color: hsl(28, 88%, 62%);
+ --title-color: hsl(0, 0%, 95%);
+ --text-color: hsl(0, 0%, 75%);
+ --body-color: hsl(0, 0%, 6%);
+ --body-font: "Montserrat", sans-serif;
+ --second-font: "Dancing Script", cursive;
+ --h2-font-size: 1.25rem;
+ --small-font-size: 0.813rem;
+ --font-semi-bold: 600;
+ --z-tooltip: 10;
+ --z-fixed: 100;
+}
+
+body {
+ background-color: var(--body-color);
+ color: var(--text-color);
+ font-family: var(--body-font);
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.snake1 span, .snake1 svg, span.snake1 {
+    color: #4caf50;
+    font-weight: bold;
+}
+  
+.snake2 span, .snake2 svg, span.snake2 {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+span.exclamation {
+    color:red;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.exit-game {
+    background-color: #f44336; /* Rojo */
+}
+
+.exit-game:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+}
+
+.snake-button {
+    background: linear-gradient(15deg, #2196f3 50%, #4caf50 50%);
+    transition: transform 1.5s; /* Agregamos la transición para el background */
+    margin-right: 1em;
+}
+  
+.snake-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(35deg, #2196f3 50%, #4caf50 50%); /* Cambio de pendiente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.snake-button:disabled {
+    background: linear-gradient(15deg, #2195f386 50%, #4caf4f81 50%);
+    cursor: not-allowed;
+}
+
+.snake-button:disabled:hover {
+    background: linear-gradient(15deg, #2195f386 50%, #4caf4f81 50%);
+    cursor: not-allowed;
+}
+

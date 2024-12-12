@@ -1,0 +1,58 @@
+/* src/css/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .login-title {
+    margin-left: -0.75em;
+    margin-bottom: 0.5em;
+  }
+  
+  .login-card {
+    background: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+    color: #2a5298;
+  }
+  
+  .login-card p {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .login-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-input:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+  }
+
+  p.login-error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }	
+  
+  

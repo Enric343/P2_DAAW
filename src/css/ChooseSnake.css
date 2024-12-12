@@ -1,0 +1,50 @@
+/* src/css/ChooseSnake.css */
+
+.choose-snake-container {
+    margin-top: 5em;
+}
+
+.choose-snake-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.selection-snake-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    font-family: 'Arial', sans-serif;
+    gap: 25px;
+    padding:3em;
+    border-radius: 1em;
+  }
+  
+  .snake-card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .snake-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .snake-card.snake1 {
+    background-color: #4caf50; /* Verde */
+  }
+  
+  .snake-card.snake2 {
+    background-color: #2196f3; /* Azul */
+  }
+  

@@ -1,4 +1,3 @@
-
 export const config = {
-    boardSize: 30,
+    boardSize: 15,
 };

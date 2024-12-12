@@ -1,3 +1,4 @@
+// src/components/NotFound.jsx
 
 const notFound = () => {
     return (
